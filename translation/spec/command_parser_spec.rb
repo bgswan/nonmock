@@ -1,6 +1,4 @@
-require File.dirname(__FILE__) + '/../app/command_parser'
-require File.dirname(__FILE__) + '/../app/quantity'
-require File.dirname(__FILE__) + '/../app/item_id'
+Dir[File.dirname(__FILE__) + '/../app/*.rb'].each {|file| require file }
 
 describe CommandParser do
   
